@@ -2,7 +2,7 @@
 
 This notebook contains exploratory experiments for the concept classification task in the dnaPipelineR pipeline. The aim was to test a variety of machine learning architectures for mapping statements to 21 fine-grained concept categories in the labour-law codebook.
 
-Experiments Included
+## Experiments Included
 
 - Support Vector Machine (SVM) with SBERT embeddings
 
