@@ -31,6 +31,15 @@ Jupyter notebooks documenting all experiments for concept classification, right 
 
 - All code was run in Google Colab for processing power and exported as .ipynb so outputs can be viewed directly without re-running.
 
+## outputs/
+Example outputs (CSV files) generated from running the pipeline on a sample debate "Employment Rights Bill (Twentieth Sitting) Debated on Tuesday 14 January 2025". Contains:
+
+- The outputs from each of the 5 modules in the pipeline
+  
+- The final consolidated spreadsheet produced by the final stage of the pipeline
+  
+- The example TXT file debate used to generate outputs
+
 # How to Use
 1) Datasets – Found in data/. These can be loaded directly into Python, R, or DNA software for replication.
 
