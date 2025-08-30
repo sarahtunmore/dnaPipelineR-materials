@@ -13,4 +13,4 @@ These files are **not required** to run the pipeline, they are provided only to 
 - `statement_concepts.csv` – Predictions from concept classification module.
 - `statement_rights.csv` – Predictions from right classification module.
 - `actor_org_statements_with_statements.csv` - Output from sentiment Analysis module.
-- `pipeline_output_Employment_Rights_Bill_Twentieth_sitting_2025-01-14.csv` – Consolidated output for use in Discourse Network Analyzer (DNA), uses the text name of TXT debate inputted.
+- `pipeline_output_Employment_Rights_Bill_Twentieth_sitting_2025-01-14.csv` – Consolidated output for use in Discourse Network Analyzer, uses the text name of TXT debate inputted.
