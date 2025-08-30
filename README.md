@@ -1,54 +1,46 @@
 # dnaPipelineR-materials
 
-This repository contains **supporting materials** for the dissertation project:
-**dnaPipelineR: A Semi-Automated Pipeline for Discourse Network Analysis**.  
-It is a companion to the main [dnaPipelineR](https://github.com/sarahtunmore/dnaPipelineR) repository, which contains the runnable R package.
+This repository contains **supporting materials** for the MSc Extended Research Project:
+**Developing a Semi-Supervised Text Annotation Pipeline for Political Discourse Analysis using Natural Language Processing and Machine Learning Techniques**.  
+
+It complements the main [dnaPipelineR](https://github.com/sarahtunmore/dnaPipelineR) repository, which provides the usable R package implementation of the final pipeline.
+This repository provides the datasets, experimental notebooks, and documentation required for reproducibility and transparency.
 
 ---
 
-## Contents
+# Repository Structure
 
-- **data/**  
-  Annotated dataset of 862 statements from UK parliamentary debates, including actor, organisation, concept, and right labels (see dissertation Appendix B for details).
+## data/
 
-- **experiments/**  
-  Scripts and outputs from model training and evaluation, including:
-  - Statement segmentation (MLP, embeddings)
-  - Concept classification (SVM, MLP, grouped/fine-grained)
-  - Right classification (SVM + ablations)
-  - Ablation runs (e.g., without POS features)
+- `MANUALLY_ANNOTATED_DATA.xlsx` – Full annotated dataset (862 statements).
 
-- **models/**  
-  Serialized trained models (`.joblib`) for reproducibility.  
-  These are not needed to *run* the pipeline but are included to replicate dissertation experiments.
+- `512_each_statements_nonstatements_chunks.xlsx` – Balanced dataset for statement segmentation (512 statements, 512 non-statements).
 
-- **docs/**  
-  Notes on experiment settings, results, and reproducibility checklist.
+- `metadata.docx` – Full description of the datasets, annotation process, variables, ethics/licensing, and Hansard sources.
 
----
+- (Codebook available in dissertation appendix; may be added here if approved.)
 
-## Relationship to Main Repo
+## experiments/
+Jupyter notebooks documenting all experiments for concept classification, right classification, and statement segmentation.
 
-- [dnaPipelineR](https://github.com/sarahtunmore/dnaPipelineR):  
-  Installable R package for semi-automatic annotation. End users should start here.
+- Exploratory and ablation experiments (`experiments_for_concept_classifier.ipynb`).
 
-- **This repo (`dnaPipelineR-materials`)**:  
-  Contains training data, experimental scripts, and supporting materials required for ERP submission and full reproducibility.  
-  Not required to run the R package.
+- Final SVM implementations for concepts and rights (`SVM_for_concept_classification.ipynb`, `SVM_for_right_classification.ipynb`).
 
----
+- Statement segmentation models using multilingual and MiniLM embeddings (`paraphrase_multilingual_MLP_for_statement_segmentation.ipynb`, `all_MiniLM_L6_MLP_for_statement_segmentation.ipynb`).
 
-## Reproducibility
+- All code was run in Google Colab for processing power and exported as .ipynb so outputs can be viewed directly without re-running.
 
-To reproduce experiments:
-1. Clone this repo.
-2. Navigate into an experiment folder, e.g. `experiments/concept_classification/`.
-3. Run the training script (`train_concept.py`) with the provided dataset.  
-   Requirements: Python 3.9+, scikit-learn, transformers, joblib.
+# How to Use
+1) Datasets – Found in data/. These can be loaded directly into Python, R, or DNA software for replication.
+
+2) Notebooks – Open any .ipynb in GitHub to view results (metrics, confusion matrices, error analysis). To re-run: download the notebook and open in Google Colab or Jupyter.
+
+3) Pipeline – The runnable pipeline is provided in the dnaPipelineR repository.
 
 ---
 
-## Citation
+# Citation
 
 If referring to this repository in academic work:
 
