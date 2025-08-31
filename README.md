@@ -29,7 +29,7 @@ Jupyter notebooks documenting all experiments for concept classification, right 
 
 - Statement segmentation models using multilingual and MiniLM embeddings (`paraphrase_multilingual_MLP_for_statement_segmentation.ipynb`, `all_MiniLM_L6_MLP_for_statement_segmentation.ipynb`).
 
-- All code was run in Google Colab for processing power and exported as .ipynb so outputs can be viewed directly without re-running.
+All code was run in Google Colab for processing power and exported as .ipynb so outputs can be viewed directly without re-running.
 
 ## outputs/
 Example outputs (CSV files) generated from running the pipeline on a sample debate "Employment Rights Bill (Twentieth Sitting) Debated on Tuesday 14 January 2025". Contains:
@@ -41,16 +41,9 @@ Example outputs (CSV files) generated from running the pipeline on a sample deba
 - The example TXT file debate used to generate outputs
 
 # How to Use
-1) Datasets – Found in data/. These can be loaded directly into Python, R, or DNA software for replication.
+1) **Datasets** – Found in data/. These can be loaded directly into Python, R, or DNA software for replication.
 
-2) Notebooks – Open any .ipynb in GitHub to view results (metrics, confusion matrices, error analysis). To re-run: download the notebook and open in Google Colab or Jupyter.
+2) **Notebooks** – Open any .ipynb in GitHub to view results (metrics, confusion matrices, error analysis). To re-run: download the notebook and open in Google Colab or Jupyter.
 
-3) Pipeline – The runnable pipeline is provided in the dnaPipelineR repository.
+3) **Pipeline** – The runnable pipeline is provided in the dnaPipelineR repository.
 
----
-
-# Citation
-
-If referring to this repository in academic work:
-
-> sarahtunmore (2025). *dnaPipelineR-materials: Supporting materials for ERP dissertation*. GitHub. https://github.com/sarahtunmore/dnaPipelineR-materials
