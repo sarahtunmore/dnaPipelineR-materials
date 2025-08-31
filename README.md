@@ -53,4 +53,4 @@ Example outputs (CSV files) generated from running the pipeline on a sample deba
 
 If referring to this repository in academic work:
 
-> sarahtunmore (2025). *dnaPipelineR-materials: Supporting materials for ERP dissertation*. GitHub. https://github.com/sarahsorous/dnaPipelineR-materials
+> sarahtunmore (2025). *dnaPipelineR-materials: Supporting materials for ERP dissertation*. GitHub. https://github.com/sarahtunmore/dnaPipelineR-materials
