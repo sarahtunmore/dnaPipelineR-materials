@@ -18,7 +18,7 @@ This repository provides the datasets, experimental notebooks, and documentation
 
 - `metadata.docx` – Full description of the datasets, annotation process, variables, ethics/licensing, and Hansard sources.
 
-- (Codebook available in dissertation appendix; may be added here if approved.)
+- `codebook.docx` - The domain-specific codebook, prepared by Prof. Aristea Koukiadaki, used for manual annotation of statements
 
 ## experiments/
 Jupyter notebooks documenting all experiments for concept classification, right classification, and statement segmentation.
